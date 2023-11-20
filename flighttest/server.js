@@ -13,17 +13,15 @@ const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
 
 //
-app.use(express.json()); // 用于解析 JSON 请求体
+app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));
 // MongoDB Atlas 连接字符串
 
 let db;
 client.connect().then(() => {
-  // 连接成功后获取数据库实例
   db = client.db('test');
   console.log("Connected successfully to MongoDB Atlas");
 
-  // 在此处启动 Express 服务器
 
   app.listen(port, () => {
     console.log(`Server running on port ${port}`);
