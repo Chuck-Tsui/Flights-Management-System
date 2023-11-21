@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <% if (flights.length > 0) { %>
+        <ul>
+            <% flights.forEach(flight => { %>
+                <li>
+                    Flight Number: <%= flight.flightNumber %>,
+                    Airline: <%= flight.airline %>,
+                    Destination: <%= flight.destination %>,
+                    Status: <%= flight.status %>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No flights found.</p>
+    <% } %>
+    <a href="/search">back to search</a><br>
+    <a href="/home">Home</a>
+</body>
+</html>
+
