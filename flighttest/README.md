@@ -1,4 +1,4 @@
-Flight Control System
+Flight Management System
 
 Group: 2
 Number of group members: 3
@@ -21,10 +21,10 @@ System functions list:
             3. Search by destination: /api/flights/destination/:destination
             4. Search by status: /api/flights/status/:status
 
-In the cover of the homepage, the page should display "Welcome to Flight Control System", and underneath that, users can log in/out with their credentials..
+In the cover of the homepage, the page should display "Welcome to Flight Management System", and underneath that, users can log in/out with their credentials..
 ********************************************
 # Login
-For the login interface, each user can access the content of the Flight Control System with their own registered usernames and passwords.
+For the login interface, each user can access the content of the Flight Management System with their own registered usernames and passwords.
 
 The user id, i.e. the "name", is stored after successful login using credentials.
 
