@@ -76,7 +76,7 @@ Status is optional.
 Create operation is post request, and all information is in body of request.
 
 ********************************************
-# CRUD service
+
 - Update
 
 Show all the details, grouped by their aircraft registration id and company id
@@ -98,7 +98,6 @@ Remark: To update the details of other flights, just repeat the above steps.
 
 ********************************************
 
-# CRUD service
 - Search
 1. Click on the corresponding flight object
 2. Search flight objects by using one or more out of the following attributes: flight number, airline, destination, status (check in, take off, arrival)
