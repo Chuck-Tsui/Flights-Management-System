@@ -89,7 +89,7 @@ Show all the details, grouped by their aircraft registration id and company id
 Remark: To update the details of other flights, just repeat the above steps.
 
 ********************************************
-# CRUD service
+
 - Delete
 1. Click on the corresponding flight object to obtain details of the flight.
 2. Click 'Delete' to delete this flight object
