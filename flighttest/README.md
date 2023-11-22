@@ -1,8 +1,11 @@
 Flight Control System
 
 Group: 2
+
 Number of group members: 3
+
 Name: Lee Brian (12623187), Zhu Jiawei (12627010), Xu Xiaochi (12556828)
+
 MongoDB Database name: comps381-project
 
 Application link: 
