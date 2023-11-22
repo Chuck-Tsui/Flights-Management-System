@@ -13,13 +13,13 @@ System functions list:
         2. Creation of new flight object
         3. Read details from existing flight objects
         4. Remove flight objects
-        5. Search flight objects by one or more out of the following attributes: flight number, airline, destination, state (check in, take off, arrival)
+        5. Search flight objects by one or more out of the following attributes: flight number, airline, destination, status (check in, take off, arrival)
         6. Search flight objects by MongoDB query command
         7. RESTful service: 
             1. Search by flight number: /api/flights/flightnumber/:flightnumber
             2. Search by airline: /api/flights/airline/:airline
             3. Search by destination: /api/flights/destination/:destination
-            4. Search by state: /api/flights/state/:state
+            4. Search by status: /api/flights/status/:status
 
 In the cover of the homepage, the page should display "Welcome to Flight Control System", and underneath that, users can log in/out with their credentials..
 ********************************************
@@ -60,18 +60,18 @@ Reminder: username and passwords are both case sensitive,
 	1) Flight Number: each flight will be assigned a flight number. The flight number consists of a mixture of letters and numbers, and stored in string format, spaces are allowed between characters, e.g. BA 240
 	2) Airline: each flight will be assigned to an airline. The airline contains letters only, with at least 1 capital letter and is stored in string format, no restriction in number of characters, spaces are allowed between characters, e.g. Cathay Pacific
 	3) Destination: each flight will be flown to a destination. The destination contains letters only, with at least 1 capital letter and is stored in string format, no restriction in number of characters, spaces are allowed between characters, e.g. Japan
-	4) State: each flight will have its own state: check in, arrival, take off. Spaces are allowed between characters. State is stored in string format.
+	4) Status: each flight will have its own status: check in, arrival, take off. Spaces are allowed between characters. Status is stored in string format.
 
 	1. Click on 'Create Flight' button.
 	2. The page will be redirected to the 'Create Flight' page
-	2. Fill in the details of the flight object, e.g. Flight Number, Airline, Destination, State
+	2. Fill in the details of the flight object, e.g. Flight Number, Airline, Destination, Status
 	3. Click 'Create' to create the flight object
 	4. Click on 'View Flight' button
 	5. The page will be redirected to the 'View Flight' page
 	4. The 'View Flight' page should show that a new flight object is created.
 
 Flight Number, Airline and Destination are mandatory.
-State is optional.
+Status is optional.
 
 Create operation is post request, and all information is in body of request.
 
@@ -101,7 +101,7 @@ Remark: To update the details of other flights, just repeat the above steps.
 # CRUD service
 - Search
 1. Click on the corresponding flight object
-2. Search flight objects by using one or more out of the following attributes: flight number, airline, destination, state (check in, take off, arrival)
+2. Search flight objects by using one or more out of the following attributes: flight number, airline, destination, status (check in, take off, arrival)
 3. Click 'Search' to search this flight object
 4. The flight information will be filtered based on the query criteria specified in the search bar, only showing the relevant flight objects.
 5. Return to homepage by clicking 'Home' or continue searching for other flight objects by editing the search bar.
@@ -126,7 +126,7 @@ RESTful services test:
         	1. Search by flight number: /api/flights/flightnumber/:flightnumber
             2. Search by airline: /api/flights/airline/:airline
             3. Search by destination: /api/flights/destination/:destination
-            4. Search by state: /api/flights/state/:state
+            4. Search by status: /api/flights/status/:status
 
             Search by Flight Number:
                 1. Copy and past the Search by name pathURL 'https://comps381f-project.render.com/api/flights/flightnumber'
@@ -146,11 +146,11 @@ RESTful services test:
 				3. Select the flight object that correponds to the destination you want.
                 4. Click 'Home' button return to homepage or search other object with different destinations.
 
-			Search by States:
-                1. Copy and past the Search by name pathURL 'https://comps381f-project.render.com/api/flights/states'
+			Search by Status:
+                1. Copy and past the Search by name pathURL 'https://comps381f-project.render.com/api/flights/status'
                 2. The system will redirect to RESTful Search Result page and show the result.
-				3. Select the flight object that correponds to the associated state.
-                4. Click 'Home' button return to homepage or search other object with the other states.
+				3. Select the flight object that correponds to the associated status.
+                4. Click 'Home' button return to homepage or search other object with the other status.
 
         	Search document(s) via MongoDB query command:
         	Note: Search document(s) via MongoDB query command is not case-sensitive
