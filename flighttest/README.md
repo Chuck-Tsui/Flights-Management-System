@@ -1,11 +1,8 @@
 Flight Control System
 
 Group: 2
-
 Number of group members: 3
-
 Name: Lee Brian (12623187), Zhu Jiawei (12627010), Xu Xiaochi (12556828)
-
 MongoDB Database name: comps381-project
 
 Application link: 
@@ -109,8 +106,6 @@ Remark: To update the details of other flights, just repeat the above steps.
 5. Return to homepage by clicking 'Home' or continue searching for other flight objects by editing the search bar.
 ********************************************
 # Restful
-Note: RESTful services is case-sensitive, must be login to the system first with any valid account then use the services.
-
 For HTTP request types, there are three types that are to be tested: post, get and delete.
 
 - Post 
@@ -120,9 +115,7 @@ For HTTP request types, there are three types that are to be tested: post, get a
 	Successful insertion will be displayed if the post request testing is successful. The list of flight objects in the 'View Flight' page will be updated, with the associated flight objects removed from the RESTFUL POST test.
 
 RESTful services test:
-
-        Note: RESTful services is case-sensitive
-        Note: Must be login to the system first with any valid account then use the services
+Note: Must be login to the system first with any valid account then use the services
 
         RESTful searching services access by the following:
         	1. Search by flight number: /api/flights/flightnumber/:flightnumber
@@ -161,8 +154,8 @@ RESTful services test:
 
 - Delete
 	Delete request is used for deletion.
-	Example: Path URL: /api/flights/destination/:destination
-	Test: curl -X DELETE localhost:3000/api/flights/destination/Japan.
+	Example: Path URL: /api/flights/:flightnumber
+	Test: curl -X DELETE localhost:3000/api/flights/destination/BA243.
 	Successful deletion will be performed. The list of flight objects in the 'View Flight' page will be updated, with the associated flight objects removed from the RESTFUL Delete test.
 ***************************************************************
 END
