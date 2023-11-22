@@ -83,7 +83,7 @@ Show all the details, grouped by their aircraft registration id and company id
 	1. navigate to the corresponding flight object to obtain details of the flight.
 	3. Click 'Update' to update the airplane information for the corresponding flight object.
 	4. Change the flight number from 'CX231' to 'CX232'
-	5. Click 'Home' button
+	5. Click 'Back to Home' button
 	6. The 'View Flight' page should shown the updated object
 	
 Remark: To update the details of other flights, just repeat the above steps.
@@ -93,7 +93,7 @@ Remark: To update the details of other flights, just repeat the above steps.
 - Delete
 1. Click on the corresponding flight object to obtain details of the flight.
 2. Click 'Delete' to delete this flight object
-3. Click 'Home' button
+3. Click 'Back to Home' button
 4. The associated flight information should be removed from the 'View Flight' page.
 
 ********************************************
@@ -103,7 +103,7 @@ Remark: To update the details of other flights, just repeat the above steps.
 2. Search flight objects by using one or more out of the following attributes: flight number, airline, destination, status (check in, take off, arrival)
 3. Click 'Search' to search this flight object
 4. The flight information will be filtered based on the query criteria specified in the search bar, only showing the relevant flight objects.
-5. Return to homepage by clicking 'Home' or continue searching for other flight objects by editing the search bar.
+5. Return to homepage by clicking 'Back to Home' or continue searching for other flight objects by editing the search bar.
 ********************************************
 # Restful
 For HTTP request types, there are three types that are to be tested: post, get and delete.
@@ -127,19 +127,19 @@ Note: Must be login to the system first with any valid account then use the serv
                 1. Copy and past the Search by name pathURL 'https://comps381f-project.render.com/api/flights/flightnumber'
                 2. The system will redirect to RESTful Search Result page and show the result.
 				3. Select the flight object that correponds to the flight number you want.
-                4. Click 'Home' button return to homepage or search other object with different flight numbers.
+                4. Click 'Back to Home' button return to homepage or search other object with different flight numbers.
             
             Search by Airline:
                 1. Copy and past the Search by name pathURL 'https://comps381f-project.render.com/api/flights/airline'
                 2. The system will redirect to RESTful Search Result page and show the result.
 				3. Select the flight object that correponds to the airline you want.
-                4. Click 'Home' button return to homepage or search other object with different airlines.
+                4. Click 'Back to Home' button return to homepage or search other object with different airlines.
 
 			Search by Destination:
                 1. Copy and past the Search by name pathURL 'https://comps381f-project.render.com/api/flights/destination'
                 2. The system will redirect to RESTful Search Result page and show the result.
 				3. Select the flight object that correponds to the destination you want.
-                4. Click 'Home' button return to homepage or search other object with different destinations.
+                4. Click 'Back to Home' button return to homepage or search other object with different destinations.
 
 			Search by Status:
                 1. Copy and past the Search by name pathURL 'https://comps381f-project.render.com/api/flights/status'
