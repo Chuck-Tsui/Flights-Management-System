@@ -5,7 +5,7 @@ Number of group members: 3
 Name: Lee Brian (12623187), Zhu Jiawei (12627010), Xu Xiaochi (12556828)
 MongoDB Database name: comps381-project
 
-Application link: 
+Application link: http://flights-381project.onrender.com/login
 
 Github link: https://github.com/Chuck-Tsui/Flights-Management-System/tree/main
 
