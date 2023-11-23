@@ -126,25 +126,25 @@ Note: Must be login to the system first with any valid account then use the serv
             4. Search by status: /api/flights/status/:status
 
             Search by Flight Number:
-                1. Copy and past the Search by name pathURL 'https://comps381f-project.render.com/api/flights/flightnumber'
+                1. Copy and past the Search by name pathURL 'https://comps381-project.render.com/api/flights/flightnumber'
                 2. The system will redirect to RESTful Search Result page and show the result.
 				3. Select the flight object that correponds to the flight number you want.
                 4. Click 'Back to Home' button return to homepage or search other object with different flight numbers.
             
             Search by Airline:
-                1. Copy and past the Search by name pathURL 'https://comps381f-project.render.com/api/flights/airline'
+                1. Copy and past the Search by name pathURL 'https://comps381-project.render.com/api/flights/airline'
                 2. The system will redirect to RESTful Search Result page and show the result.
 				3. Select the flight object that correponds to the airline you want.
                 4. Click 'Back to Home' button return to homepage or search other object with different airlines.
 
 			Search by Destination:
-                1. Copy and past the Search by name pathURL 'https://comps381f-project.render.com/api/flights/destination'
+                1. Copy and past the Search by name pathURL 'https://comps381-project.render.com/api/flights/destination'
                 2. The system will redirect to RESTful Search Result page and show the result.
 				3. Select the flight object that correponds to the destination you want.
                 4. Click 'Back to Home' button return to homepage or search other object with different destinations.
 
 			Search by Status:
-                1. Copy and past the Search by name pathURL 'https://comps381f-project.render.com/api/flights/status'
+                1. Copy and past the Search by name pathURL 'https://comps381-project.render.com/api/flights/status'
                 2. The system will redirect to RESTful Search Result page and show the result.
 				3. Select the flight object that correponds to the associated status.
                 4. Click 'Home' button return to homepage or search other object with the other status.
