@@ -3,19 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Search Flight</title>
+    <style>
+        body {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('Background.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
     <h1>Search for Flight</h1>
     <form action="/searchResults" method="get">
+    <div>
         <input type="text" name="flightNumber" placeholder="Flight Number">
         <input type="text" name="airline" placeholder="Airline">
         <input type="text" name="destination" placeholder="Destination">
         <input type="text" name="status" placeholder="Status (check in, take off, arrival)">
-        <button type="submit">Search</button>
+    </div>
+    <div style="display:flex;flex-direction:column;">
+        <button type="submit" style="background-color: green; color:white">Search</button>
+    </div>
     </form>
 
     <a href="/home">Home</a><br>
     <a href="/login">Logout</a>
 </body>
 </html>
-
