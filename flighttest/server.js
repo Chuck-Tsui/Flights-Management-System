@@ -100,7 +100,7 @@ app.get('/create', function(req, res) {
 
 // Route for searching flights
 app.get('/search', (req, res) => {
-    res.render('search'); // 这将渲染 search.ejs 文件
+    res.render('search');
 });
 
 
