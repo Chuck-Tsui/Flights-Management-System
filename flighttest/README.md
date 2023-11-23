@@ -7,6 +7,8 @@ MongoDB Database name: comps381-project
 
 Application link: 
 
+Github link: https://github.com/Chuck-Tsui/Flights-Management-System/tree/main
+
 ********************************************
 System functions list:
         1. Login/ Logout
