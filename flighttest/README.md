@@ -69,7 +69,7 @@ Repeat the above steps for logging into other accounts with other registered use
 	1. Click on 'Create Flight' button.
 	2. The page will be redirected to the 'Create Flight' page
 	2. Fill in the details of the flight object, e.g. Flight Number, Airline, Destination, Status
-	3. Click 'Create' to create the flight object
+	3. Click 'Create Flight' button to create the flight object
 	4. Click on 'View Flight' button
 	5. The page will be redirected to the 'View Flight' page
 	4. The 'View Flight' page should show that a new flight object is created.
