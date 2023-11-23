@@ -2,30 +2,42 @@
 <html>
 <head>
     <title>Edit Flight</title>
-    
+    <style>
+        body {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('Cathay Paciffic.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+    </style>
+   
 </head>
 <body>
     <h1>Edit Flight Information</h1>
     <form action="/edit" method="post">
-        
-        <label for="flightNumber">Flight Number:</label>
-        <input type="text" id="flightNumber" name="flightNumber" value="<%= flight.flightNumber %>"><br><br>
+    <div style="display:flex;flex-direction:column;">
+        <label for="inputFlight">Flight:</label>
+        <input type='text' name='inputFlight' placeholder="Enter a Flight number">
 
-        <label for="airline">Airline:</label>
-        <input type="text" id="airline" name="airline" value="<%= flight.airline %>"><br><br>
+        <label for="inputAirline">Airline:</label>
+        <input type='text' name='inputAirline' placeholder="Enter a Airline name">
 
-        <label for="destination">Destination:</label>
-        <input type="text" id="destination" name="destination" value="<%= flight.destination %>"><br><br>
-        
-        <label for="status">Destination:</label>
-        <input type="text" id="status" name="status" value="<%= flight.status %>"><br><br>
+        <label for="inputDestination">Flight:</label>
+        <input type='text' name='inputDestination' placeholder="Enter the Destination Name">
 
-
-
-        <input type="submit" value="Update Flight">
+     </div>
+     <div style="display:flex;flex-direction:column;">  
+        <label for="button">Submit:</label>
+        <button type="submit" name='button' style="background-color:red; color:white; width:auto" >Submit</button>
+     </div>
     </form>
-    <a href="/home">Back to Home</a><br>
-    <a href="/login">Logout</a>
+    <a href="/">Back to Home</a>
 </body>
 </html>
-
