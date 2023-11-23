@@ -23,7 +23,7 @@ System functions list:
             3. Search by destination: /api/flights/destination/:destination
             4. Search by status: /api/flights/status/:status
 
-In the cover of the homepage, the page should display "Welcome to Flight Management System", and underneath that, users can log in/out with their credentials..
+In the cover of the homepage, the page should display "Welcome to Flight Management System", and underneath that, users can log in/out with their credentials. A background photo of the night view of the HK Airport is shown.
 ********************************************
 # Login
 For the login interface, each user can access the content of the Flight Management System with their own registered usernames and passwords.
