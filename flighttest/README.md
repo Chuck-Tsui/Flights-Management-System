@@ -87,8 +87,8 @@ Show all the details, grouped by their aircraft registration id and company id
 	1. Navigate to the corresponding flight object to obtain details of the flight.
 	3. Click 'Update' to update the airplane information for the corresponding flight object.
 	4. Change the flight number from 'CX231' to 'CX232', airline from 'Cathay Pacific' to 'Hong Kong Airline'
-	5. Click 'Back to Flight List' button
-	6. The 'View Flight' page should shown the updated object
+	5. Click 'Back to Flight List' button to redirect back to the 'View Flight' page.
+	6. The 'View Flight' page should shown the associated flight object has been updated.
 	
 Remark: To update the details of other flights, just repeat the above steps.
 
