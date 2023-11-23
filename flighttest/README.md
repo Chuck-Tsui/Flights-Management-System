@@ -120,11 +120,11 @@ For HTTP request types, there are three types that are to be tested: post, get a
 RESTful services test:
 Note: Must be login to the system first with any valid account then use the services
 
-        RESTful searching services access by the following:
-        	1. Search by flight number: /api/flights/flightnumber/:flightnumber
-            2. Search by airline: /api/flights/airline/:airline
-            3. Search by destination: /api/flights/destination/:destination
-            4. Search by status: /api/flights/status/:status
+RESTful searching services access by the following:
+              1. Search by flight number: /api/flights/flightnumber/:flightnumber
+              2. Search by airline: /api/flights/airline/:airline
+              3. Search by destination: /api/flights/destination/:destination
+              4. Search by status: /api/flights/status/:status
 
             Search by Flight Number:
                 1. Copy and past the Search by name pathURL 'https://comps381-project.render.com/api/flights/flightnumber'
