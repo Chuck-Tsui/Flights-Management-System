@@ -25,7 +25,7 @@ System functions list:
 
 In the cover of the homepage, the page should display "Welcome to Flight Management System", and underneath that, users can log in/out with their credentials. A background photo of the night view of the HK Airport is shown.
 ********************************************
-# Login
+# Login / Logout
 For the login interface, each user can access the content of the Flight Management System with their own registered usernames and passwords.
 
 The user id, i.e. the "name", is stored after successful login using credentials.
