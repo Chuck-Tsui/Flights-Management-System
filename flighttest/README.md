@@ -36,24 +36,24 @@ If a user leave the username and password sections blank, which mean an empty st
 The password must be at least 8 characters long, including at least 1 number and 1 upper-case letter in the string.
 Password: "" means that account has no password.
         1. {name: "brianlee", password: "brianLEE1011"},
-		2. {name: "jiaweizhu", password: "jiaweiZHU0308"},
-		3. {name: "chuckxu", password: "chuckXU0610"},
+	2. {name: "jiaweizhu", password: "jiaweiZHU0308"},
+	3. {name: "chuckxu", password: "chuckXU0610"},
         4. {name: "elviszhao", password: "elvisZHAO1006"},
     	5. {name: "nikochen", password: "nikoCHEN0610"},
-    	5. {name: "micklee", password: "mickLEE0429"}
+    	6. {name: "micklee", password: "mickLEE0429"}
 
 Testings for login/logout:
 Reminder: username and passwords are both case sensitive, 
     1. Login the system by using the following, for example: 
-		Username: brianlee 
+	Username: brianlee 
         Password: brianLEE1011
-	2. The information of the users will be stored into session.
-	3. The page will now display a UI with two options: Create Flight and View Flight.
-	4. Click the 'Log out' button to log out
-	5. Navigate on 'Logout' button for logging out of the page
-	6. The system will redirect users back to the login page.
+    2. The information of the users will be stored into session.
+    3. The page will now display a UI with two options: Create Flight and View Flight.
+    4. Click the 'Log out' button to log out
+    5. Navigate on 'Logout' button for logging out of the page
+    6. The system will redirect users back to the login page.
 
-	Repeat the above steps for logging into other accounts with other registered usernames and passwords
+Repeat the above steps for logging into other accounts with other registered usernames and passwords
 
 ********************************************
 # CRUD service
@@ -64,6 +64,7 @@ Reminder: username and passwords are both case sensitive,
 	3) Destination: each flight will be flown to a destination. The destination contains letters only, with at least 1 capital letter and is stored in string format, no restriction in number of characters, spaces are allowed between characters, e.g. Japan
 	4) Status: each flight will have its own status: check in, arrival, take off. Spaces are allowed between characters. Status is stored in string format.
 
+  	Procedures:
 	1. Click on 'Create Flight' button.
 	2. The page will be redirected to the 'Create Flight' page
 	2. Fill in the details of the flight object, e.g. Flight Number, Airline, Destination, Status
@@ -82,7 +83,7 @@ Create operation is post request, and all information is in body of request.
 - Update
 
 Show all the details, grouped by their aircraft registration id and company id
-	1. navigate to the corresponding flight object to obtain details of the flight.
+	1. Navigate to the corresponding flight object to obtain details of the flight.
 	3. Click 'Update' to update the airplane information for the corresponding flight object.
 	4. Change the flight number from 'CX231' to 'CX232'
 	5. Click 'Back to Home' button
@@ -128,31 +129,31 @@ Note: Must be login to the system first with any valid account then use the serv
             Search by Flight Number:
                 1. Copy and past the Search by name pathURL 'https://comps381-project.render.com/api/flights/flightnumber'
                 2. The system will redirect to RESTful Search Result page and show the result.
-				3. Select the flight object that correponds to the flight number you want.
+		3. Select the flight object that correponds to the flight number you want.
                 4. Click 'Back to Home' button return to homepage or search other object with different flight numbers.
             
             Search by Airline:
                 1. Copy and past the Search by name pathURL 'https://comps381-project.render.com/api/flights/airline'
                 2. The system will redirect to RESTful Search Result page and show the result.
-				3. Select the flight object that correponds to the airline you want.
+		3. Select the flight object that correponds to the airline you want.
                 4. Click 'Back to Home' button return to homepage or search other object with different airlines.
 
-			Search by Destination:
+	    Search by Destination:
                 1. Copy and past the Search by name pathURL 'https://comps381-project.render.com/api/flights/destination'
                 2. The system will redirect to RESTful Search Result page and show the result.
-				3. Select the flight object that correponds to the destination you want.
+		3. Select the flight object that correponds to the destination you want.
                 4. Click 'Back to Home' button return to homepage or search other object with different destinations.
 
-			Search by Status:
+	     Search by Status:
                 1. Copy and past the Search by name pathURL 'https://comps381-project.render.com/api/flights/status'
                 2. The system will redirect to RESTful Search Result page and show the result.
-				3. Select the flight object that correponds to the associated status.
+		3. Select the flight object that correponds to the associated status.
                 4. Click 'Home' button return to homepage or search other object with the other status.
 
         	Search document(s) via MongoDB query command:
         	Note: Search document(s) via MongoDB query command is not case-sensitive
 			
-			Search filtering will be performed basedThe list of flight objects in the 'View Flight' page will be updated, filtering only the relevant flight objects that fulfill the query criteria based on the RESTFUL GET test.
+		Search filtering will be performed basedThe list of flight objects in the 'View Flight' page will be updated, filtering only the relevant flight objects that fulfill the query criteria based on the RESTFUL GET test.
 
 - Delete
 	Delete request is used for deletion.
