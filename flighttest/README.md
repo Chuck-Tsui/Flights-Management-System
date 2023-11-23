@@ -47,11 +47,12 @@ Reminder: username and passwords are both case sensitive,
     1. Login the system by using the following, for example: 
 	Username: brianlee 
         Password: brianLEE1011
-    2. The information of the users will be stored into session.
-    3. The page will now display a UI with two options: Create Flight and View Flight.
-    4. Click the 'Log out' button to log out
-    5. Navigate on 'Logout' button for logging out of the page
-    6. The system will redirect users back to the login page.
+    2. Click "Submit"
+    3. The information of the users will be stored into session.
+    4. The page will now display a UI with two options: Create Flight and View Flight.
+    5. Click the 'Log out' button to log out
+    6. Navigate on 'Logout' button for logging out of the page
+    7. The system will redirect users back to the login page.
 
 Repeat the above steps for logging into other accounts with other registered usernames and passwords
 
