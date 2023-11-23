@@ -2,30 +2,54 @@
 <html>
 <head>
     <title>Create Flight</title>
-
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <style>
+        body {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('3648787.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
+    <!---%- include('partials/header') %--->
+    <table>
     <h1>Create a New Flight</h1>
-    <form action="/create" method="post">
-        <label for="flightNumber">Flight Number:</label>
-        <input type="text" id="flightNumber" name="flightNumber"><br><br>
-
+    <form action="/create" method="post" onsubmit="return validateForm()">
+  <div>
+    <div class="label-left">
+        <label for=" flightNumber">Flight Number:</label>
+        <input type="text" id="flightNumber" name="flightNumber" required><br><br>
+    </div>
+    <div class="label-left">
         <label for="airline">Airline:</label>
-        <input type="text" id="airline" name="airline"><br><br>
-
+        <input type="text" id="airline" name="airline" required><br><br>
+    </div>
+    <div class="label-left">
         <label for="destination">Destination:</label>
-        <input type="text" id="destination" name="destination"><br><br>
-        
+        <input type="text" id="destination" name="destination" required><br><br>
+    <div class="label-left">  
         <label for="status">Status:</label>
-        <input type="text" id="status" name="status"><br><br>
-        
-
-        <!-- Add other necessary fields here -->
-
-        <input type="submit" value="Create Flight">
+        <input type="text" id="status" name="status" required><br><br>
+    </div>
+    <div class="label-left">
+        <input type="submit" value="Create Flight" style="background-color: red; color:white">
     </form>
+    </div>
+  </div>
     <a href="/home">Back to Home</a><br>
     <a href="/login">Logout</a>
+
+    <!---- include('partials/footer') %--->
+    </table>
+    <script src="/validateForm.js"></script>
 </body>
 </html>
-
